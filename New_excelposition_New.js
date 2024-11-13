@@ -353,21 +353,24 @@
                                             var rec = result.split("[$@~!~@$]")[i].split("[#@~!~@#]");
                                             if (rec.length > 0) {
                                                 len = rec[0].trim().length + rec[1].trim().length + rec[2].trim().length + rec[3].trim().length + rec[4].trim().length + rec[
-                                                    5].trim().length + rec[6].trim().length + rec[7].trim().length + rec[8].trim().length + rec[9].trim().length + rec[10].trim().length ;
+                                                    5].trim().length + rec[6].trim().length + rec[7].trim().length + rec[8].trim().length + rec[9].trim().length + rec[10].trim().length + rec[11].trim().length + rec[12].trim().length + rec[13].trim().length ;
                                                 if (len > 0) {
                                                     rec_count = rec_count + 1;
                                                     result_final.push({
                                                       'ID': rec[0].trim(),
                                                       'DESCRIPTION': rec[1].trim(),
-                                                      'PARENT': rec[2].trim(),
-							'PAY_GRADE': rec[3].trim(),
-							    'JOBCODE': rec[4].trim(),
-							    'SECTOR': rec[5].trim(),
-                                                      'DEPARTMENT': rec[6].trim(),
-                                                      'COST_CENTER': rec[7].trim(),
-                                                      'JOINING_MONTH': rec[8].trim(),
-							'NATIONALITY': rec[9].trim(),
-							 'COMPANY': rec[10].trim(),  
+                                                      'Role': rec[2].trim(),
+							'Job_Title': rec[3].trim(),
+							    'Pension': rec[4].trim(),
+							    'Soc_Sec_Band': rec[5].trim(),
+                                                      'Contract_Type': rec[6].trim(),
+                                                      'Band': rec[7].trim(),
+                                                      'Country': rec[8].trim(),
+							'Manager_Name': rec[9].trim(),
+							 'Start_Date': rec[10].trim(),  
+							    'First_Name': rec[11].trim(),  
+							    'Surname': rec[12].trim(),  
+							    'Gender': rec[13].trim(),  
 							 
 							   
                                                     });
