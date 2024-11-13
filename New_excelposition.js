@@ -346,14 +346,14 @@
                                 var rec_count = 0;
 
                                 var len = 0;
-                                if (lengthfield === 14) {
+                                if (lengthfield === 16) {
                                     for (var i = 1; i < result.split("[$@~!~@$]").length; i++) {
                                         if (result.split("[$@~!~@$]")[i].length > 0) {
 
                                             var rec = result.split("[$@~!~@$]")[i].split("[#@~!~@#]");
                                             if (rec.length > 0) {
                                                 len = rec[0].trim().length + rec[1].trim().length + rec[2].trim().length + rec[3].trim().length + rec[4].trim().length + rec[
-                                                    5].trim().length + rec[6].trim().length + rec[7].trim().length + rec[8].trim().length + rec[9].trim().length + rec[10].trim().length + rec[11].trim().length + rec[12].trim().length + rec[13].trim().length;
+                                                    5].trim().length + rec[6].trim().length + rec[7].trim().length + rec[8].trim().length + rec[9].trim().length + rec[10].trim().length + rec[11].trim().length + rec[12].trim().length + rec[13].trim().length + rec[14].trim().length + rec[15].trim().length;
                                                 if (len > 0) {
                                                     rec_count = rec_count + 1;
                                                     result_final.push({
@@ -371,6 +371,8 @@
 							'First_Name' : rec[11].trim(),
 							'Surname' : rec[12].trim(),
 							'Gender' : rec[13].trim(),
+							'NFTE' : rec[14].trim(),
+							 'NGS' : rec[15].trim(),   
                                                     });
                                                 }
                                             }
